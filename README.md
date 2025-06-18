@@ -31,10 +31,10 @@
 git clone https://github.com/mlndlrdp/web-site-template.git
 
 # Navigate to project directory
-cd website-template
+cd web-site-template
 
-# Install dependencies (if any)
-npm install
+# Install SASS
+npm install sass --save-dev
 
 # Start development
 npm run sass-watch
