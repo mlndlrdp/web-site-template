@@ -34,6 +34,7 @@ git clone https://github.com/mlndlrdp/web-site-template.git
 cd web-site-template
 
 # Install SASS
+npm init
 npm install sass --save-dev
 
 # Start development
