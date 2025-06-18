@@ -1,0 +1,13 @@
+@use 'helpers' as *;
+
+:root {
+
+
+
+
+  --container-width: #{rem()};
+  --container-padding-x: #{rem()};
+
+  --transition-duration: 0.2s;
+
+}
