@@ -1,1 +1,30 @@
 @use 'helpers' as *;
+
+
+a,
+button,
+label,
+input,
+textarea,
+select,
+svg * {
+  transition-duration: var(--transition-duration);
+}
+
+a {
+  color: inherit;
+
+  @include hover {
+    color: var();
+  }
+
+  &[class] {
+    text-decoration: none;
+  }
+}
+
+:focus-visible {
+  outline: rem(2) dashed var();
+  outline-offset: rem(4);
+  transition-duration: 0s !important;
+}
