@@ -9,7 +9,7 @@
 
 *Ready-to-use website template with modern SCSS architecture*
 
-[Quick Start](#-quick-start) • [Setup Guide](#-setup-guide) • [Project Structure](#-project-structure)
+[Demo](#demo) • [Quick Start](#-quick-start) • [Documentation](#-documentation) • [Contributing](#-contributing)
 
 </div>
 
@@ -33,9 +33,11 @@ git clone https://github.com/mlndlrdp/web-site-template.git
 # Navigate to project directory
 cd web-site-template
 
-# Install SASS
-npm init
-npm install sass --save-dev
+# Initialize npm project (creates package.json)
+npm init -y
+
+# Install SCSS compiler
+npm install -g sass
 
 # Start development
 npm run sass-watch
@@ -45,8 +47,29 @@ npm run sass-watch
 
 Follow these steps to customize the template for your project:
 
-### Step 1: 🎬 Start Development
-Run the SCSS watcher to automatically compile your styles:
+### Step 1: 🎬 Setup SCSS Compilation
+First, initialize your npm project and install SCSS:
+
+```bash
+# Initialize npm project
+npm init -y
+
+# Install SCSS compiler globally
+npm install -g sass
+```
+
+Then add the SCSS watch command to your `package.json` file:
+
+Open `package.json` and add this line to the `"scripts"` section:
+```json
+{
+  "scripts": {
+    "sass-watch": "sass --watch ."
+  }
+}
+```
+
+Now start the SCSS watcher to automatically compile your styles:
 ```bash
 npm run sass-watch
 ```
@@ -108,10 +131,19 @@ web-site-template/
 
 ## 🛠️ Available Commands
 
+Before you start, make sure to add the SCSS compilation script to your `package.json`:
+
+```json
+{
+  "scripts": {
+    "sass-watch": "sass --watch ."
+  }
+}
+```
+
 | Command | Description |
 |---------|-------------|
-| `npm run sass-watch` | Watch and auto-compile SCSS files |
-| `npm run build` | Build optimized CSS for production |
+| `npm run sass-watch` | Watch and auto-compile SCSS files during development |
 
 ## 💡 Key Benefits
 
@@ -156,6 +188,6 @@ MIT License - feel free to use in personal and commercial projects.
 
 **Save time on every new project with this flexible starter template**
 
-[⭐ Star this repo](https://github.com/yourusername/website-template) if it helps you build faster!
+[⭐ Star this repo](https://github.com/mlndlrdp/web-site-template) if it helps you build faster!
 
 </div>
