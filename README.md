@@ -28,7 +28,7 @@
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/website-template.git
+git clone https://github.com/mlndlrdp/web-site-template.git
 
 # Navigate to project directory
 cd website-template
